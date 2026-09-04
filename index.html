@@ -19,9 +19,12 @@
 <header class="header">
   <div class="nav-container">
 
-    <a class="logo" href="#inicio">
-      <span class="logo-icon">🏃</span>
-      <span>Run<span>Circuit</span></span>
+   <a class="logo logo-image-link" href="#inicio">
+      <img
+        src="assets/runcircuit-logo.png"
+        alt="RunCircuit"
+        class="brand-logo"
+      >
     </a>
 
     <nav class="nav">
@@ -33,8 +36,13 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <a class="button button-small" href="#descargar">
-      Descargar app
+    <a
+      class="button button-small"
+      href="https://drive.google.com/file/d/1_i_tb7zDc7CCRj4g5R4jI66Ib187etIC/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Descargar Beta
     </a>
 
   </div>
@@ -51,6 +59,11 @@
 
       <div class="hero-text">
 
+        <div class="beta-pill">
+          <span>●</span>
+          BETA ANDROID · v0.3.0
+        </div>
+
         <h1>
           Tu próxima carrera.<br>
           Tu lugar en el ranking.<br>
@@ -59,15 +72,20 @@
 
         <p>
           RunCircuit es la app para corredores que
-          te conecta con carreras, rankings y personas
-          que comparten tu pasión por correr.
+          reúne carreras, resultados, estadísticas
+          y una comunidad que comparte tu pasión por correr.
         </p>
 
         <div class="hero-actions">
 
-          <a class="button" href="#descargar">
-            Descargar la app
-          </a>
+        <a
+          class="button"
+          href="https://drive.google.com/file/d/1_i_tb7zDc7CCRj4g5R4jI66Ib187etIC/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Descargar Beta
+        </a>
 
           <a class="button button-secondary" href="#calendario">
             Ver cómo funciona
@@ -77,13 +95,13 @@
 
         <div class="store-row">
 
-          <div class="store-badge">
-            <small>DISPONIBLE EN</small>
-            <strong>Google Play</strong>
+          <div class="store-badge beta-store">
+            <small>BETA DISPONIBLE</small>
+            <strong>Android · APK</strong>
           </div>
 
           <div class="store-badge">
-            <small>PRÓXIMAMENTE EN</small>
+            <small>PRÓXIMAMENTE</small>
             <strong>App Store</strong>
           </div>
 
@@ -114,34 +132,34 @@
             </div>
 
             <div>
-              <strong>Maratón de Buenos Aires</strong>
-              <small>42K · Buenos Aires</small>
-              <em>Próximamente</em>
+              <strong>Maratón de Bs As</strong>
+              <small>42,195 km · Buenos Aires</small>
+              <em>Próxima</em>
             </div>
           </div>
 
           <div class="race-preview">
             <div class="date-box">
-              <strong>15</strong>
-              <span>NOV</span>
+              <strong>04</strong>
+              <span>OCT</span>
             </div>
 
             <div>
-              <strong>Carrera 10K</strong>
-              <small>10K · Argentina</small>
+              <strong>Vecchioli Corre</strong>
+              <small>15 km · 10 km · 5 km</small>
               <em>Ver carrera</em>
             </div>
           </div>
 
           <div class="race-preview">
             <div class="date-box">
-              <strong>06</strong>
-              <span>DIC</span>
+              <strong>01</strong>
+              <span>NOV</span>
             </div>
 
             <div>
-              <strong>Media Maratón</strong>
-              <small>21K · Argentina</small>
+              <strong>Media Maratón de Rafaela</strong>
+              <small>21,097 km · 10 km · 5 km</small>
               <em>Ver carrera</em>
             </div>
           </div>
@@ -204,8 +222,8 @@
       <h3>Calendario de carreras</h3>
 
       <p>
-        Encontrá carreras cerca tuyo y en todo el país.
-        No te pierdas ninguna.
+        Descubrí próximas competencias, distancias
+        y toda la información en un mismo lugar.
       </p>
     </article>
 
@@ -216,8 +234,8 @@
       <h3>Ranking</h3>
 
       <p>
-        Comparate con corredores de tu categoría
-        y distancia. Seguí tu posición.
+        Compará tus resultados por distancia,
+        categoría, sexo y ubicación.
       </p>
     </article>
 
@@ -228,8 +246,8 @@
       <h3>Comunidad</h3>
 
       <p>
-        Conectá con corredores, compartí logros
-        y disfrutá el running acompañado.
+        Encontrá corredores, explorá sus perfiles
+        y generá nuevas conexiones.
       </p>
     </article>
 
@@ -237,11 +255,11 @@
     <article class="feature">
       <div class="feature-icon orange">📈</div>
 
-      <h3>Tus estadísticas</h3>
+      <h3>Tu actividad</h3>
 
       <p>
-        Registrá tus carreras y seguí tu evolución
-        de forma simple y clara.
+        Registrá entrenamientos, carreras, récords
+        y seguí tu evolución.
       </p>
     </article>
 
@@ -253,77 +271,161 @@
   <section class="showcase">
 
     <div class="section-heading">
-      <h2>Calendario y ranking en acción</h2>
+      <span class="section-kicker">
+        RUNCIRCUIT EN ACCIÓN
+      </span>
+
+      <h2>Encontrá tu próxima carrera</h2>
+
+      <p class="section-description">
+        El calendario de la comunidad reúne competencias
+        para que puedas descubrir qué correr y dónde.
+      </p>
+
       <div class="heading-line"></div>
     </div>
 
 
     <div class="showcase-grid">
 
-      <article id="calendario" class="showcase-card">
+      <!-- PRÓXIMAS CARRERAS -->
+
+      <article id="calendario" class="showcase-card races-showcase">
 
         <div class="showcase-title green-text">
-          📅 Calendario siempre actualizado
+          📅 Próximas carreras
         </div>
 
         <p>
-          Fechas, distancias y ciudades en un solo lugar.
+          Algunas de las competencias que ya forman
+          parte del calendario de RunCircuit.
         </p>
 
-        <div class="calendar-demo">
 
-          <div class="calendar-header">
-            <span>‹</span>
-            <strong>Septiembre 2026</strong>
-            <span>›</span>
+        <div class="web-race-list">
+
+          <div class="web-race featured-race">
+
+            <div class="web-race-date">
+              <strong>20</strong>
+              <span>SEP</span>
+            </div>
+
+            <div class="web-race-info">
+              <span class="race-status">
+                PRÓXIMA
+              </span>
+
+              <strong>
+                Maratón de Bs As
+              </strong>
+
+              <small>
+                42,195 km
+              </small>
+
+              <span>
+                Ciudad de Buenos Aires
+              </span>
+            </div>
+
           </div>
 
-          <div class="week">
-            <span>L</span>
-            <span>M</span>
-            <span>X</span>
-            <span>J</span>
-            <span>V</span>
-            <span>S</span>
-            <span>D</span>
+
+          <div class="web-race">
+
+            <div class="web-race-date">
+              <strong>04</strong>
+              <span>OCT</span>
+            </div>
+
+            <div class="web-race-info">
+
+              <strong>
+                Vecchioli Corre
+              </strong>
+
+              <small>
+                15 km · 10 km · 5 km
+              </small>
+
+              <span>
+                Rafaela · Santa Fe
+              </span>
+
+            </div>
+
           </div>
 
-          <div class="calendar-days">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
 
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-            <span>11</span>
-            <span>12</span>
-            <span>13</span>
-            <span>14</span>
+          <div class="web-race">
 
-            <span>15</span>
-            <span>16</span>
-            <span>17</span>
-            <span>18</span>
-            <span>19</span>
-            <span class="selected-day">20</span>
-            <span>21</span>
+            <div class="web-race-date">
+              <strong>01</strong>
+              <span>NOV</span>
+            </div>
+
+            <div class="web-race-info">
+
+              <strong>
+                Media Maratón de Rafaela
+              </strong>
+
+              <small>
+                21,097 km · 10 km · 5 km
+              </small>
+
+              <span>
+                Rafaela · Santa Fe
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="web-race">
+
+            <div class="web-race-date">
+              <strong>21</strong>
+              <span>NOV</span>
+            </div>
+
+            <div class="web-race-info">
+
+              <strong>
+                Nocturna Esperanza
+              </strong>
+
+              <small>
+                10 km · 5 km
+              </small>
+
+              <span>
+                Esperanza · Santa Fe
+              </span>
+
+            </div>
+
           </div>
 
         </div>
 
-        <ul class="benefits">
-          <li>Información detallada de cada carrera</li>
-          <li>Filtros por distancia y ubicación</li>
-          <li>Calendario comunitario</li>
-        </ul>
+
+        <div class="calendar-note">
+          <span>✓</span>
+
+          <p>
+            Próximamente este calendario se actualizará
+            automáticamente con las carreras publicadas
+            por la comunidad RunCircuit.
+          </p>
+        </div>
 
       </article>
 
+
+      <!-- RANKING -->
 
       <article id="ranking" class="showcase-card">
 
@@ -332,7 +434,8 @@
         </div>
 
         <p>
-          Rankings por distancia, sexo y categoría.
+          Compará tus resultados con otros corredores
+          por distancia y categoría.
         </p>
 
         <div class="ranking-demo">
@@ -366,10 +469,15 @@
         </div>
 
         <ul class="benefits">
-          <li>Ranking por distancia</li>
+          <li>Rankings por distancia</li>
           <li>Categorías por edad</li>
-          <li>Compará tu progreso</li>
+          <li>Filtros por sexo y ubicación</li>
+          <li>Compará tus resultados</li>
         </ul>
+
+        <div class="coming-soon-note">
+          Ranking en evolución dentro de RunCircuit.
+        </div>
 
       </article>
 
@@ -388,30 +496,119 @@
       </span>
 
       <h2>
-        Una comunidad<br>
-        <span>que te impulsa.</span>
+        Corré conectado.<br>
+        <span>Formá parte.</span>
       </h2>
     </div>
 
+
     <div class="community-item">
-      <strong>👥 Conectá</strong>
+      <strong>🔎 Encontrá</strong>
+
       <p>
-        Encontrá corredores y generá nuevas conexiones.
+        Descubrí corredores que ya forman
+        parte de RunCircuit.
       </p>
     </div>
 
+
     <div class="community-item">
-      <strong>🏆 Competí</strong>
+      <strong>🤝 Conectate</strong>
+
       <p>
-        Compará tus marcas y participá de rankings.
+        Generá conexiones y construí
+        tu comunidad de running.
       </p>
     </div>
 
+
     <div class="community-item">
-      <strong>❤️ Compartí</strong>
+      <strong>🏃 Compartí</strong>
+
       <p>
-        Compartí tu pasión por correr con otros.
+        Explorá perfiles, carreras
+        y la actividad competitiva de otros corredores.
       </p>
+    </div>
+
+  </section>
+
+
+  <!-- MÁS QUE CARRERAS -->
+
+  <section class="runner-tools">
+
+    <div class="section-heading">
+
+      <span class="section-kicker">
+        TU RUNNING EN UN SOLO LUGAR
+      </span>
+
+      <h2>
+        Mucho más que un calendario
+      </h2>
+
+      <p class="section-description">
+        RunCircuit también te ayuda a registrar y organizar
+        tu propia actividad como corredor.
+      </p>
+
+    </div>
+
+
+    <div class="runner-tools-grid">
+
+      <article class="runner-tool">
+        <span>🏃</span>
+
+        <div>
+          <strong>Entrenamientos</strong>
+          <p>
+            Registrá rodajes, pasadas, bloques,
+            fondos y otras actividades.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="runner-tool">
+        <span>🏁</span>
+
+        <div>
+          <strong>Historial de carreras</strong>
+          <p>
+            Conservá tus resultados y competencias
+            en un único historial.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="runner-tool">
+        <span>🥇</span>
+
+        <div>
+          <strong>Récords personales</strong>
+          <p>
+            Seguí tus mejores marcas
+            en las principales distancias.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="runner-tool">
+        <span>📊</span>
+
+        <div>
+          <strong>Estadísticas</strong>
+          <p>
+            Visualizá tu evolución y mantené
+            tus objetivos siempre presentes.
+          </p>
+        </div>
+      </article>
+
     </div>
 
   </section>
@@ -435,14 +632,24 @@
       <p>
         RunCircuit nace con una idea simple:
         reunir en un mismo lugar las carreras,
-        las marcas, los rankings y la comunidad
+        los resultados, los rankings y la comunidad
         que forma parte del running.
       </p>
 
       <p>
-        Una plataforma pensada para corredores
-        de Argentina y con la mirada puesta en seguir creciendo.
+        Una plataforma creada en Argentina
+        para corredores, con la mirada puesta
+        en seguir creciendo.
       </p>
+
+      <div class="beta-message">
+        <strong>RunCircuit está creciendo.</strong>
+
+        <span>
+          La versión Beta ya está siendo probada
+          por corredores reales.
+        </span>
+      </div>
 
     </div>
 
@@ -451,24 +658,47 @@
 
   <!-- DESCARGA -->
 
-  <section id="descargar" class="download">
+  <section id="descargar" class="download beta-download">
 
     <div>
 
+      <span class="download-label">
+        BETA PARA ANDROID · v0.3.0
+      </span>
+
       <h2>
-        Listo para tu próxima carrera
+        Sumate a RunCircuit
       </h2>
 
       <p>
-        Descargá RunCircuit y llevá tu pasión
-        por correr con vos.
+        Probá la versión Beta y ayudanos
+        a seguir construyendo una mejor comunidad
+        para corredores.
       </p>
 
     </div>
 
-    <a class="download-button" href="#">
-      Descargar la app
-    </a>
+    <div class="download-actions">
+
+      <!--
+        Cuando tengamos la URL definitiva del APK,
+        reemplazaremos # por el enlace de descarga.
+      -->
+
+      <a
+        class="download-button"
+        href="https://drive.google.com/file/d/1_i_tb7zDc7CCRj4g5R4jI66Ib187etIC/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Descargar Beta
+      </a>
+
+      <small>
+        APK para Android
+      </small>
+
+    </div>
 
   </section>
 
@@ -481,15 +711,29 @@
 
     <div>
 
-      <div class="logo footer-logo">
-        <span class="logo-icon">🏃</span>
-        <span>Run<span>Circuit</span></span>
-      </div>
+      <a class="logo logo-image-link footer-logo" href="#inicio">
+        <img
+          src="assets/runcircuit-logo.png"
+          alt="RunCircuit"
+          class="brand-logo footer-brand-logo"
+        >
+      </a>
 
       <p>
         Carreras, rankings y comunidad
         para corredores.
       </p>
+
+      <p>
+        <strong>Contacto:</strong><br>
+        <a href="mailto:ignacioch@gmail.com">
+          ignacioch@gmail.com
+        </a>
+      </p>
+
+      <span class="footer-beta">
+        Beta Android · v0.3.0
+      </span>
 
     </div>
 
@@ -502,32 +746,34 @@
       <a href="#calendario">Calendario</a>
       <a href="#ranking">Ranking</a>
       <a href="#comunidad">Comunidad</a>
+      <a href="#acerca">Acerca de</a>
 
     </div>
 
 
     <div>
-
       <h4>Legal</h4>
 
-      <a href="privacy.html">
+      <a href="privacidad.html">
         Política de privacidad
       </a>
 
-    </div>
+      <a href="seguridad.html">
+        Seguridad
+      </a>
 
+      <a href="eliminar-datos.html">
+        Eliminación de datos
+      </a>
+    </div>
 
     <div>
 
-      <h4>Contacto</h4>
+      <h4>Ubicación</h4>
 
       <p>
         Rafaela, Santa Fe<br>
         Argentina
-      </p>
-
-      <p>
-        Contacto próximamente
       </p>
 
     </div>
