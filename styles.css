@@ -2914,3 +2914,84 @@ a {
     padding: 16px;
   }
 }
+/* RunCircuit Beta v0.5.0: refreshed landing, scoped to preserve legal pages. */
+.landing-v5 { --text: #102c2a; --muted: #526b68; --green: #087f5b; --blue: #087f5b; --blue-dark: #066447; background: #f8faf7; }
+.landing-v5 .header { background: rgba(248,250,247,.96); border-color: #dce5df; }
+.landing-v5 .hero { background: radial-gradient(ellipse at 80% 30%, #d8efc9 0, transparent 53%), #f8faf7; padding-top: 76px; padding-bottom: 80px; }
+.landing-v5 .hero h1 { font-size: clamp(40px,4.5vw,66px); line-height: 1.06; letter-spacing: -.055em; }
+.landing-v5 .hero h1 span { color: #087f5b; }
+.landing-v5 .hero-text > p { max-width: 500px; font-size: 18px; line-height: 1.75; }
+.landing-v5 .beta-pill { background: #e2eedb; color: #245439; border: 1px solid #c8dcc0; letter-spacing: .08em; font-size: 11px; }
+.landing-v5 .button, .landing-v5 .download-button { border-radius: 12px; background: #123e32; color: #fff; box-shadow: none; }
+.landing-v5 .button:hover, .landing-v5 .download-button:hover { background: #087f5b; transform: translateY(-2px); }
+.landing-v5 .button-secondary { background: transparent; color: #123e32; border: 1px solid #aebfb3; }
+.landing-v5 .button-secondary:hover { color: #fff; }
+.landing-v5 .features { gap: 0; border: 1px solid #dce5df; border-radius: 20px; overflow: hidden; background: #fff; }
+.landing-v5 .feature { background: transparent; border: 0; border-radius: 0; box-shadow: none; padding: 28px; }
+.landing-v5 .feature + .feature { border-left: 1px solid #e4ebe5; }
+.landing-v5 .showcase-card, .landing-v5 .runner-tool { border: 1px solid #dce5df; box-shadow: none; border-radius: 20px; background: #fff; }
+.landing-v5 .section-heading h2, .landing-v5 .about h2 { letter-spacing: -.045em; }
+.landing-v5 .community { background: #123e32; border-radius: 24px; }
+.landing-v5 .community h2, .landing-v5 .community-item strong { color: #fff; }
+.landing-v5 .community h2 span, .landing-v5 .community-label { color: #c7ef99; }
+.landing-v5 .community-item p { color: #d3e4d8; }
+.landing-v5 .beta-download { background: #d9edc5; color: #123e32; border: 1px solid #c8dfb3; border-radius: 24px; }
+.landing-v5 .beta-download h2, .landing-v5 .beta-download p, .landing-v5 .download-label, .landing-v5 .download-actions small { color: #123e32; }
+.landing-v5 .footer { background: #eef3ec; }
+.landing-v5 .hero-visual { position: relative; }
+.landing-v5 .demo-label { position: absolute; bottom: -26px; left: 0; width: 100%; text-align: center; font-size: 12px; color: #526b68; }
+.landing-v5 :is(a,button):focus-visible { outline: 3px solid #087f5b; outline-offset: 5px; }
+.landing-v5 [id] { scroll-margin-top: 120px; }
+@media (max-width: 1000px) {
+ .landing-v5 .nav-container { flex-wrap: wrap; gap: 12px; padding: 12px 0; }
+ .landing-v5 .nav { display: flex; order: 3; width: 100%; overflow-x: auto; gap: 22px; padding: 8px 0; white-space: nowrap; }
+ .landing-v5 .nav-container > .button { margin-left: auto; }
+ .landing-v5 .feature + .feature { border-left: 0; }
+}
+@media (max-width: 600px) {
+ .landing-v5 .hero { padding-top: 40px; padding-bottom: 52px; }
+ .landing-v5 .hero h1 { font-size: clamp(34px,9vw,48px); }
+ .landing-v5 .hero-text > p { font-size: 16px; }
+ .landing-v5 .feature { padding: 22px; }
+ .landing-v5 .hero-actions { display: flex; flex-direction: column; align-items: stretch; }
+ .landing-v5 .hero-actions a { text-align: center; }
+ .landing-v5 .nav-container > .button { font-size: 12px; padding: 11px 12px; }
+ .landing-v5 .download-actions small { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+ html { scroll-behavior: auto; }
+ .landing-v5 *, .landing-v5 *::before, .landing-v5 *::after { animation: none !important; transition: none !important; }
+}
+
+/* Current app screenshots and blue brand palette. */
+.landing-v5 { --text: #101c34; --muted: #56657d; --blue: #2460ed; --blue-dark: #1747bc; --green: #2460ed; background: #f8faff; }
+.landing-v5 .header { background: rgba(248,250,255,.96); }
+.landing-v5 .hero { background: radial-gradient(ellipse at 82% 40%,#dbe8ff,transparent 58%),#f8faff; }
+.landing-v5 .hero h1 span { color: #2460ed; }
+.landing-v5 .hero-content { align-items: center; }
+.landing-v5 .beta-pill { background: #eaf0ff; color: #1945a4; border-color: #cddaff; }
+.landing-v5 .button,.landing-v5 .download-button { background: #2460ed; }
+.landing-v5 .button:hover,.landing-v5 .download-button:hover { background: #1747bc; }
+.landing-v5 .button-secondary { background: #fff; color: #1747bc; border-color: #c5d3ee; }
+.landing-v5 .button-secondary:hover { color: #fff; }
+.landing-v5 .community { background: #122c59; }
+.landing-v5 .community h2 span,.landing-v5 .community-label { color: #a9c7ff; }
+.landing-v5 .beta-download { background: #e5edff; border-color: #cddaff; }
+.landing-v5 .beta-download h2,.landing-v5 .beta-download p,.landing-v5 .download-label,.landing-v5 .download-actions small { color: #122c59; }
+.landing-v5 .footer { background: #edf2fb; }
+.landing-v5 .app-preview { position: relative; display: grid; justify-items: center; padding: 12px 24px; min-width: 0; }
+.landing-v5 .app-preview > a { display: block; width: min(100%,280px); z-index: 1; transform: rotate(3deg); border: 6px solid #182438; border-radius: 34px; overflow: hidden; box-shadow: 0 30px 65px #19356a29; background: #fff; }
+.landing-v5 .app-preview img { display: block; width: 100%; height: auto; }
+.landing-v5 .preview-orbit { position: absolute; width: 95%; aspect-ratio: 1; top: 12%; border: 1px solid #bdd0f6; border-radius: 50%; }
+.landing-v5 .preview-caption { margin-top: 30px; font-size: 10px; letter-spacing: .18em; color: #56657d; }
+.screens-section { max-width: 1180px; margin: 0 auto; padding: 80px 0; }
+.screen-hint { color: #56657d; font-size: 13px; line-height: 1.6; }
+.screens-track { display: flex; gap: 26px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 14px 8px 26px; scrollbar-color: #2460ed #e5edff; }
+.screen-card { flex: 0 0 246px; margin: 0; scroll-snap-align: start; }
+.screen-card > a { display: block; border: 1px solid #d3dff2; border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 12px 25px #1735690d; }
+.screen-card img { display: block; width: 100%; height: auto; aspect-ratio: 738 / 1600; object-fit: contain; }
+.screen-card h3 { font-size: 17px; margin: 20px 0 8px; letter-spacing: -.025em; }
+.screen-card p { font-size: 14px; color: #56657d; line-height: 1.6; margin: 0; }
+.landing-v5 :is(a,button,[tabindex]):focus-visible { outline: 3px solid #2460ed; outline-offset: 4px; }
+@media (max-width: 1200px) { .screens-section { margin-inline: 22px; } }
+@media (max-width: 720px) { .landing-v5 .app-preview { margin-top: 30px; } .landing-v5 .app-preview > a { width: 240px; transform: none; } .screens-section { padding: 48px 0; } .screen-card { flex-basis: 230px; } }

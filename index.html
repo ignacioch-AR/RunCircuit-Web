@@ -11,10 +11,10 @@
     content="RunCircuit conecta corredores con carreras, rankings y una comunidad que comparte la pasión por correr."
   >
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/runcircuit-logo.png"><meta name="theme-color" content="#2460ed"><link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="landing-v5">
 
 <header class="header">
   <div class="nav-container">
@@ -27,7 +27,7 @@
       >
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegación principal">
       <a href="#inicio">Inicio</a>
       <a href="#calendario">Calendario</a>
       <a href="#ranking">Ranking</a>
@@ -38,11 +38,11 @@
 
     <a
       class="button button-small"
-      href="https://drive.google.com/file/d/1upy80pZ0HkjwuTCzgYbLAkuo1xNinvGO/view?usp=sharing"
+      href="https://drive.google.com/file/d/1NlceW_70bA26evt2BIZT3MmLdmZME617/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
     >
-      Descargar Beta
+      Descargar v0.5.0
     </a>
 
   </div>
@@ -61,7 +61,7 @@
 
         <div class="beta-pill">
           <span>●</span>
-          BETA ANDROID · v0.4.0
+          BETA ANDROID · v0.5.0
         </div>
 
         <h1>
@@ -80,14 +80,14 @@
 
         <a
           class="button"
-          href="https://drive.google.com/file/d/1upy80pZ0HkjwuTCzgYbLAkuo1xNinvGO/view?usp=sharing"
+          href="https://drive.google.com/file/d/1NlceW_70bA26evt2BIZT3MmLdmZME617/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Descargar Beta
+          Descargar v0.5.0
         </a>
 
-          <a class="button button-secondary" href="#calendario">
+          <a class="button button-secondary" href="#pantallas">
             Ver cómo funciona
           </a>
 
@@ -110,108 +110,15 @@
       </div>
 
 
-      <div class="hero-visual">
-
-        <div class="circle-decoration circle-one"></div>
-        <div class="circle-decoration circle-two"></div>
-
-        <div class="phone phone-calendar">
-
-          <div class="phone-top"></div>
-
-          <h3>Calendario</h3>
-
-          <p class="phone-label">
-            Próximas carreras
-          </p>
-
-          <div class="race-preview">
-            <div class="date-box">
-              <strong>20</strong>
-              <span>SEP</span>
-            </div>
-
-            <div>
-              <strong>Maratón de Bs As</strong>
-              <small>42,195 km · Buenos Aires</small>
-              <em>Próxima</em>
-            </div>
-          </div>
-
-          <div class="race-preview">
-            <div class="date-box">
-              <strong>04</strong>
-              <span>OCT</span>
-            </div>
-
-            <div>
-              <strong>Vecchioli Corre</strong>
-              <small>15 km · 10 km · 5 km</small>
-              <em>Ver carrera</em>
-            </div>
-          </div>
-
-          <div class="race-preview">
-            <div class="date-box">
-              <strong>01</strong>
-              <span>NOV</span>
-            </div>
-
-            <div>
-              <strong>Media Maratón de Rafaela</strong>
-              <small>21,097 km · 10 km · 5 km</small>
-              <em>Ver carrera</em>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="phone phone-ranking">
-
-          <div class="phone-top"></div>
-
-          <h3>Ranking 10K</h3>
-
-          <div class="ranking-tabs">
-            <span class="active">General</span>
-            <span>Hombres</span>
-            <span>Mujeres</span>
-          </div>
-
-          <div class="ranking-row">
-            <span>1</span>
-            <strong>Martín A.</strong>
-            <span>38:12</span>
-          </div>
-
-          <div class="ranking-row">
-            <span>2</span>
-            <strong>Juan P.</strong>
-            <span>38:45</span>
-          </div>
-
-          <div class="ranking-row highlight">
-            <span>3</span>
-            <strong>Nacho F.</strong>
-            <span>39:21</span>
-          </div>
-
-          <div class="ranking-row">
-            <span>4</span>
-            <strong>Facu R.</strong>
-            <span>39:45</span>
-          </div>
-
-        </div>
-
+      <div class="app-preview">
+        <div class="preview-orbit" aria-hidden="true"></div>
+        <a href="assets/screenshots/inicio.png" target="_blank" rel="noopener" aria-label="Ver pantalla de inicio en tamaño completo (abre otra pestaña)">
+          <img src="assets/screenshots/inicio.png" width="852" height="1847" fetchpriority="high" alt="Inicio de RunCircuit: comunidad, próxima carrera y actividad semanal. Perfil ficticio de Mateo.">
+        </a>
+        <span class="preview-caption">TU RUNNING, SIEMPRE CON VOS</span>
       </div>
-
     </div>
-
   </section>
-
-
   <!-- FUNCIONES PRINCIPALES -->
 
   <section class="features">
@@ -266,6 +173,7 @@
   </section>
 
 
+<section id="pantallas" class="screens-section" aria-labelledby="screens-title"><div class="section-heading"><span class="section-kicker">CONOCÉ LA APP</span><h2 id="screens-title">Así se vive RunCircuit</h2><p class="section-description">Pantallas de la beta v0.5.0. Nombres y avatares personales reemplazados para esta presentación.</p><p class="screen-hint">Deslizá para explorar · Tocá una captura para ampliarla</p></div><div class="screens-track" tabindex="0" role="region" aria-label="Galería de pantallas de RunCircuit"><figure class="screen-card"><a href="assets/screenshots/inicio.png" target="_blank" rel="noopener" aria-label="Ampliar: Tu punto de partida (abre otra pestaña)"><img src="assets/screenshots/inicio.png" alt="Tu punto de partida: Comunidad, próxima carrera y tu semana de entrenamiento." width="738" height="1600" loading="lazy" decoding="async"></a><figcaption><h3>Tu punto de partida</h3><p>Comunidad, próxima carrera y tu semana de entrenamiento.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/carreras.jpeg" target="_blank" rel="noopener" aria-label="Ampliar: Elegí tu próxima meta (abre otra pestaña)"><img src="assets/screenshots/carreras.jpeg" alt="Elegí tu próxima meta: Explorá carreras, distancias y corredores que participan." width="738" height="1600" loading="lazy" decoding="async"></a><figcaption><h3>Elegí tu próxima meta</h3><p>Explorá carreras, distancias y corredores que participan.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/actividades.jpeg" target="_blank" rel="noopener" aria-label="Ampliar: Cada entrenamiento cuenta (abre otra pestaña)"><img src="assets/screenshots/actividades.jpeg" alt="Cada entrenamiento cuenta: Consultá tus rodajes, pasadas, ritmos y distancias." width="738" height="1600" loading="lazy" decoding="async"></a><figcaption><h3>Cada entrenamiento cuenta</h3><p>Consultá tus rodajes, pasadas, ritmos y distancias.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/comunidad.jpeg" target="_blank" rel="noopener" aria-label="Ampliar: Corré en comunidad (abre otra pestaña)"><img src="assets/screenshots/comunidad.jpeg" alt="Corré en comunidad: Encontrá corredores y administrá tus conexiones." width="738" height="1600" loading="lazy" decoding="async"></a><figcaption><h3>Corré en comunidad</h3><p>Encontrá corredores y administrá tus conexiones.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/conexiones.png" target="_blank" rel="noopener" aria-label="Ampliar: Compartí el camino (abre otra pestaña)"><img src="assets/screenshots/conexiones.png" alt="Compartí el camino: Accedé a los perfiles de los corredores con los que conectaste." width="738" height="1600" loading="lazy" decoding="async"></a><figcaption><h3>Compartí el camino</h3><p>Accedé a los perfiles de los corredores con los que conectaste.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/avisos.jpeg" target="_blank" rel="noopener" aria-label="Ampliar: Seguí la conversación (abre otra pestaña)"><img src="assets/screenshots/avisos.jpeg" alt="Seguí la conversación: Revisá los comentarios y Me gusta de tus publicaciones." width="738" height="1600" loading="lazy" decoding="async"></a><figcaption><h3>Seguí la conversación</h3><p>Revisá los comentarios y Me gusta de tus publicaciones.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/acceso.jpeg" target="_blank" rel="noopener" aria-label="Ampliar: Todo empieza acá (abre otra pestaña)"><img src="assets/screenshots/acceso.jpeg" alt="Todo empieza acá: Ingresá a tu cuenta o creá una para sumarte." width="738" height="1600" loading="lazy" decoding="async"></a><figcaption><h3>Todo empieza acá</h3><p>Ingresá a tu cuenta o creá una para sumarte.</p></figcaption></figure></div></section>
   <!-- CALENDARIO + RANKING -->
 
   <section class="showcase">
@@ -438,7 +346,7 @@
           por distancia y categoría.
         </p>
 
-        <div class="ranking-demo">
+        <div class="ranking-demo"><p class="screen-hint">Ejemplo ilustrativo · corredores ficticios</p>
 
           <h3>10K</h3>
 
@@ -456,7 +364,7 @@
 
           <div class="ranking-row highlight">
             <span>3</span>
-            <strong>Nacho F.</strong>
+            <strong>Mateo T.</strong>
             <span>39:21</span>
           </div>
 
@@ -663,7 +571,7 @@
     <div>
 
       <span class="download-label">
-        BETA PARA ANDROID · v0.4.0
+        BETA PARA ANDROID · v0.5.0
       </span>
 
       <h2>
@@ -680,22 +588,19 @@
 
     <div class="download-actions">
 
-      <!--
-        Cuando tengamos la URL definitiva del APK,
-        reemplazaremos # por el enlace de descarga.
-      -->
+
 
       <a
         class="download-button"
-        href="https://drive.google.com/file/d/1upy80pZ0HkjwuTCzgYbLAkuo1xNinvGO/view?usp=sharing"
+        href="https://drive.google.com/file/d/1NlceW_70bA26evt2BIZT3MmLdmZME617/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Descargar Beta
+        Descargar v0.5.0
       </a>
 
       <small>
-        APK para Android
+        RunCircuit-Beta-v0.5.0 · APK para Android
       </small>
 
     </div>
@@ -726,13 +631,13 @@
 
       <p>
         <strong>Contacto:</strong><br>
-        <a href="mailto:ignacioch@gmail.com">
-          ignacioch@gmail.com
+        <a href="mailto:ignacio@runcircuit.com.ar">
+          ignacio@runcircuit.com.ar
         </a>
       </p>
 
       <span class="footer-beta">
-        Beta Android · v0.4.0
+        Beta Android · v0.5.0
       </span>
 
     </div>
@@ -786,7 +691,7 @@
 
 </footer>
 
-<script src="script.js"></script>
+
 
 </body>
 </html>
