@@ -2995,3 +2995,19 @@ a {
 .landing-v5 :is(a,button,[tabindex]):focus-visible { outline: 3px solid #2460ed; outline-offset: 4px; }
 @media (max-width: 1200px) { .screens-section { margin-inline: 22px; } }
 @media (max-width: 720px) { .landing-v5 .app-preview { margin-top: 30px; } .landing-v5 .app-preview > a { width: 240px; transform: none; } .screens-section { padding: 48px 0; } .screen-card { flex-basis: 230px; } }
+
+/* Release 0.7.1 */
+.release-section { max-width:1180px; margin:0 auto; padding:80px 0 0; }
+.release-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+.release-card { padding:32px; border:1px solid #d3dff2; border-radius:24px; background:#fff; }
+.release-card:first-child { background:#122c59; color:#fff; border-color:#122c59; }
+.release-number { font-size:11px; font-weight:700; letter-spacing:.12em; color:#2460ed; }
+.release-card:first-child .release-number, .release-card:first-child a { color:#a9c7ff; }
+.release-card h3 { font-size:26px; line-height:1.2; letter-spacing:-.035em; margin:22px 0 16px; }
+.release-card p { font-size:16px; line-height:1.7; color:#56657d; }
+.release-card:first-child p { color:#d9e5fc; }
+.release-card a { display:inline-block; margin-top:16px; color:#1747bc; font-weight:600; }
+.release-card .release-note { font-size:13px; border-top:1px solid #d3dff2; padding-top:16px; }
+.landing-v5 .hero h1 { font-size:clamp(36px,4.3vw,62px); }
+@media(max-width:1200px) { .release-section { margin-inline:22px; } }
+@media(max-width:850px) { .release-grid { grid-template-columns:1fr; } .release-section { padding-top:48px; } }
