@@ -3015,3 +3015,8 @@ a {
 
 /* Release 0.7.3 */
 @media (min-width:851px) { .release-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+/* Web access alongside the Android download. */
+.landing-v5 .hero-text > .web-access-note { font-size: 14px; line-height: 1.6; margin: 14px 0 0; color: var(--muted); }
+.landing-v5 .hero-actions { flex-wrap: wrap; }
+.landing-v5 .header .button-small { display: inline-flex; }
