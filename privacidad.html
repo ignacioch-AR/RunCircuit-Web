@@ -87,7 +87,7 @@
       </p>
 
       <span class="legal-update">
-        Última actualización: 3 de noviembre de 2026
+        Última actualización: 5 de noviembre de 2026
       </span>
 
     </section>
@@ -356,8 +356,8 @@
           <p>Las actividades se utilizarán para mostrar el historial deportivo, comparar lo realizado con las sesiones planificadas y facilitar el seguimiento y las devoluciones del entrenador vinculado por el corredor. Los datos identificables podrán ser consultados por ese entrenador de acuerdo con la relación y los permisos del usuario. Compartir información con Comunidad dependerá de las opciones de privacidad y de la decisión del usuario.</p>
           <p>RunCircuit no vende datos personales ni datos provenientes de Garmin. Los proveedores técnicos que intervienen se describen en la sección 6. No se utilizarán datos de Garmin ni información derivada para entrenar, evaluar o mejorar modelos de inteligencia artificial. No se prevé procesar esos datos con servicios de IA o aprendizaje automático.</p>
           <h3>Retirar la autorización y gestionar los datos</h3>
-          <p>El usuario podrá revocar el acceso desde las opciones de aplicaciones conectadas de Garmin Connect. También podrá escribir a <a href="mailto:ignacio@runcircuit.com.ar">ignacio@runcircuit.com.ar</a> para solicitar la desconexión, el cese de nuevas importaciones y la eliminación de los datos Garmin conservados en RunCircuit. La revocación de acceso no equivale por sí sola a eliminar los datos ya importados: la solicitud puede incluir expresamente ambas acciones.</p>
-          <p>En ese mismo correo se puede solicitar acceso, una copia o exportación en formato electrónico, corrección y eliminación de los datos. Se verificará la identidad del solicitante antes de entregar o modificar información. Eliminar datos en RunCircuit no elimina los originales de Garmin. Las correcciones de datos de origen deben gestionarse también en Garmin cuando corresponda.</p>
+          <p>El usuario podrá revocar el acceso desde las opciones de aplicaciones conectadas de Garmin Connect. También podrá escribir a <a href="mailto:ignacio@runcircuit.com.ar">ignacio@runcircuit.com.ar</a> para solicitar la desconexión, el cese de nuevas importaciones y la eliminación de los datos Garmin conservados en RunCircuit. La revocación de acceso no equivale por sí sola a eliminar los datos ya importados: la solicitud puede incluir expresamente ambas acciones. Cuando la integración esté habilitada, el perfil ofrecerá desconexión conservando el historial, exportación JSON o CSV y eliminación de las actividades Garmin sin borrar las actividades manuales.</p>
+          <p>En ese mismo correo se puede solicitar acceso, una copia o exportación en formato electrónico, corrección y eliminación de los datos. Se verificará la identidad del solicitante antes de entregar o modificar información. Eliminar datos en RunCircuit no elimina los originales de Garmin. Al borrar una actividad conservaremos durante un máximo de 7 días un identificador no reversible para evitar que una reentrega la vuelva a crear. Las credenciales necesarias para retirar la autorización se mantendrán protegidas solo mientras esté pendiente esa gestión. Las correcciones de datos de origen deben gestionarse también en Garmin cuando corresponda.</p>
         </section>
 
 
@@ -369,6 +369,7 @@
           <p>RunCircuit utiliza los siguientes servicios técnicos. El acceso depende de su función; no todos reciben el contenido de las actividades.</p>
           <ul>
             <li><strong>Supabase:</strong> autenticación, base de datos, almacenamiento y funciones de servidor. La infraestructura prevista para la integración almacenará y procesará las actividades Garmin autorizadas y la información necesaria para vincularlas con la cuenta.</li>
+            <li><strong>Cloudflare Workers y almacenamiento privado KV:</strong> recepción y procesamiento técnico inicial de los mensajes de Garmin, con validación de origen y almacenamiento temporal de fragmentos cifrados. Puede tratar información técnica de conexión y los datos de actividades autorizadas en tránsito. No recibe las credenciales OAuth de los usuarios. Los objetos temporales se eliminan después del procesamiento y, ante fallos, al vencer su retención máxima de 7 días.</li>
             <li><strong>Vercel:</strong> alojamiento y distribución de la aplicación web. Procesa las solicitudes web y datos técnicos de conexión. Los datos que el usuario consulte en el navegador se presentan mediante la aplicación alojada en este servicio.</li>
             <li><strong>GitHub Pages:</strong> alojamiento del sitio informativo, esta política y los recursos públicos de marca; no es el destino previsto para almacenar archivos privados de actividades Garmin.</li>
             <li><strong>Sentry:</strong> diagnóstico de errores de la aplicación con información técnica de versión y dispositivo. No se utiliza para analizar entrenamientos. La configuración elimina usuario, solicitudes, datos extra y navegación del reporte; no se habilitan grabaciones de sesión ni capturas de pantalla. La integración Garmin no enviará intencionadamente credenciales o archivos de actividades a este servicio.</li>
