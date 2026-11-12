@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>RunCircuit | Entrenamiento, carreras y comunidad</title>
+  <title>RunCircuit | Entrenamiento y sincronización con Garmin Connect</title>
 
   <meta
     name="description"
-    content="Organizá tu entrenamiento, recibí planes de tu entrenador y conectá con corredores. Usá RunCircuit desde el navegador o descargá la beta 0.8.5 para Android."
+    content="Sincronizá tus actividades de Garmin Connect, organizá tu semana y seguí tus entrenamientos con RunCircuit en Android y desde el navegador."
   >
 
-  <link rel="icon" type="image/png" href="assets/runcircuit-logo.png"><meta name="theme-color" content="#2460ed"><link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/runcircuit-logo.png"><meta name="theme-color" content="#2460ed"><link rel="stylesheet" href="styles.css?v=087-garmin">
 </head>
 
 <body class="landing-v5">
@@ -27,7 +27,7 @@
       >
     </a>
 
-    <nav class="nav" aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#entrenamiento">Entrenamiento</a><a href="#competir">Competir</a><a href="#comunidad">Comunidad</a><a href="#acerca">Acerca de</a><a href="#contacto">Contacto</a></nav>
+    <nav class="nav" aria-label="Navegación principal"><a href="#garmin">Garmin</a><a href="#entrenamiento">Entrenamiento</a><a href="#competir">Competir</a><a href="#comunidad">Comunidad</a><a href="#acerca">Acerca de</a><a href="#contacto">Contacto</a></nav>
 
     <a class="button button-small" href="https://app.runcircuit.com.ar">Usar app web</a>
 
@@ -47,19 +47,16 @@
 
         <div class="beta-pill">
           <span>●</span>
-          APP WEB + BETA ANDROID · v0.8.5
+          SINCRONIZACIÓN CON GARMIN CONNECT
         </div>
 
         <h1>
-          Tu comunidad.<br>
-          Tu entrenamiento.<br>
-          <span>Tu próxima meta.</span>
+          Entrená con tu Garmin.<br>
+          <span>Seguí tu progreso en RunCircuit.</span>
         </h1>
 
         <p>
-          RunCircuit es la app para corredores que
-          reúne planes semanales, carreras, resultados, mensajes
-          y una comunidad que comparte tu pasión por correr.
+          Conectá tu cuenta de Garmin Connect e importá automáticamente tus actividades nuevas. Revisá lo que hiciste junto a tu plan semanal y compartilo con tus conexiones.
         </p>
 
         <div class="hero-actions">
@@ -67,46 +64,51 @@
 
         <a
           class="button button-secondary"
-          href="https://drive.google.com/file/d/1-7dC5l1y8FrRg87G6rf_NR6SXqJT8PsP/view?usp=sharing"
+          href="https://expo.dev/artifacts/eas/3JUqfdRsCeSf76P7Ku_kBbtIa3AtGEhMIz-LbaMvTvY.apk"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Descargar v0.8.5
+          Descargar v0.8.7
         </a>
 
-          <a class="button button-secondary" href="#pantallas">
-            Ver cómo funciona
-          </a>
+          <a class="button button-secondary" href="#garmin">Cómo conectar Garmin</a>
 
         </div>
         <p class="web-access-note">Entrá con tu cuenta desde el navegador, sin instalar nada.</p>
 
-        <div class="store-row">
-
-          <div class="store-badge beta-store">
-            <small>BETA DISPONIBLE · v0.8.5</small>
-            <strong>Android · APK</strong>
-          </div>
-
-          <div class="store-badge">
-            <small>PRÓXIMAMENTE</small>
-            <strong>App Store</strong>
-          </div>
-
-        </div>
-
       </div>
-
 
       <div class="app-preview">
         <div class="preview-orbit" aria-hidden="true"></div>
-        <a href="assets/screenshots/v081/inicio.png" target="_blank" rel="noopener" aria-label="Ver pantalla de inicio en tamaño completo (abre otra pestaña)">
-          <img src="assets/screenshots/v081/inicio.png" width="738" height="1600" fetchpriority="high" alt="Inicio de RunCircuit con el entrenamiento de hoy y la semana. Datos de ejemplo.">
+        <a href="assets/screenshots/v087/inicio.png" target="_blank" rel="noopener" aria-label="Ver pantalla de inicio en tamaño completo (abre otra pestaña)">
+          <img src="assets/screenshots/v087/inicio.png" width="780" height="1688" fetchpriority="high" alt="Inicio de RunCircuit con el resumen semanal y las actividades de la comunidad.">
         </a>
-        <span class="preview-caption">VISTA ILUSTRATIVA · DATOS DE EJEMPLO</span>
+        <span class="preview-caption">Pantalla de la app con datos de ejemplo</span>
       </div>
     </div>
   </section>
+  <section id="garmin" class="garmin-section" aria-labelledby="garmin-title">
+    <div>
+      <h2 id="garmin-title">Cómo conectar Garmin Connect</h2>
+      <p>Las actividades nuevas aparecen en tu historial de RunCircuit cuando se sincronizan con Garmin Connect. Podés consultar la distancia, el tiempo, el ritmo o la velocidad y la frecuencia cardíaca cuando Garmin envía esos datos.</p>
+      <ol class="garmin-steps">
+        <li>En RunCircuit, entrá a <strong>Mi perfil → Garmin Connect</strong>.</li>
+        <li>Tocá <strong>Conectar Garmin Connect</strong> y autorizá el acceso a tus actividades.</li>
+        <li>Después de entrenar, sincronizá tu reloj con Garmin Connect. La actividad puede tardar unos minutos en aparecer en RunCircuit.</li>
+      </ol>
+      <div class="garmin-actions">
+        <a class="button" href="https://app.runcircuit.com.ar/profile">Ir a mi perfil</a>
+        <a href="privacidad.html#garmin">Cómo usamos los datos de Garmin</a>
+      </div>
+    </div>
+    <figure class="garmin-preview">
+      <a href="assets/screenshots/v087/garmin.png" target="_blank" rel="noopener" aria-label="Ampliar actividad importada de Garmin (abre otra pestaña)">
+        <img src="assets/screenshots/v087/garmin.png" alt="Un rodaje importado de Garmin Connect en el historial de RunCircuit." width="780" height="1688" loading="lazy" decoding="async">
+      </a>
+      <figcaption>Actividad importada con datos de ejemplo</figcaption>
+    </figure>
+  </section>
+
   <!-- FUNCIONES PRINCIPALES -->
 
   <section class="features">
@@ -161,15 +163,85 @@
   </section>
 
 
-<section id="entrenamiento" class="release-section" aria-labelledby="release-title">
-<div class="section-heading"><span class="section-kicker">NOVEDADES · v0.8.5</span><h2 id="release-title">Más simple.<br>Más cerca de tu entrenamiento.</h2><p class="section-description">Una actualización para encontrar antes lo que necesitás, registrar con menos pasos y acompañar mejor a tus alumnos.</p></div>
-<div class="release-grid">
-<article class="release-card"><span class="release-number">01 / TU ENTRENAMIENTO</span><h3>Más espacio para tu semana</h3><p>Los encabezados se desplazan con los días. Identificá las sesiones opcionales y distinguí lo planificado de lo que ya realizaste. En Inicio, tu entrenamiento aparece una sola vez.</p><a href="#pantallas">Explorá las pantallas →</a></article>
-<article class="release-card"><span class="release-number">02 / REGISTRO MÁS SIMPLE</span><h3>Un nombre que se completa solo</h3><p>Elegí el tipo y cargá la distancia: Rodaje se convierte en Rodaje 12 km. Podés personalizar el nombre y revisar los datos antes de guardar.</p></article>
-<article class="release-card"><span class="release-number">03 / MIS ALUMNOS</span><h3>El listado, primero</h3><p>Buscá por nombre y abrí la semana o el chat desde tarjetas compactas. Avisos, invitaciones y opciones de gestión siguen al alcance.</p><p class="release-note">El acceso de entrenador requiere habilitación. Recibir planes como alumno no requiere Plus.</p></article>
-<article class="release-card"><span class="release-number">04 / MEJORAS CONTINUAS</span><h3>Preparada para seguir mejorando</h3><p>Esta versión permite recibir futuras correcciones compatibles sin reinstalar la app. Los cambios que requieran una nueva APK seguirán teniendo su aviso de actualización.</p><a href="#descargar">Instalá la 0.8.5 →</a></article>
-</div></section>
-<section id="pantallas" class="screens-section" aria-labelledby="screens-title"><div class="section-heading"><span class="section-kicker">CONOCÉ LA APP · v0.8.5</span><h2 id="screens-title">Una app. Todo tu running.</h2><p class="section-description">Pantallas de referencia de la app en vista móvil, con nombres, carreras y datos de ejemplo.</p><p class="screen-hint">Deslizá para explorar · Tocá una pantalla para ampliarla</p></div><div class="screens-track" tabindex="0" role="region" aria-label="Galería RunCircuit 0.8.5"><figure class="screen-card"><a href="assets/screenshots/v081/inicio.png" target="_blank" rel="noopener" aria-label="Ampliar: Tu entrenamiento, a mano (abre otra pestaña)"><img src="assets/screenshots/v081/inicio.png" alt="Tu entrenamiento, a mano. Pantalla de la app con datos de ejemplo." width="780" height="1688" loading="lazy" decoding="async"></a><figcaption><h3>Tu entrenamiento, a mano</h3><p>Un solo resumen para hoy, tu semana y las novedades de tu comunidad.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/v081/entrenamiento.png" target="_blank" rel="noopener" aria-label="Ampliar: Hoy, con claridad (abre otra pestaña)"><img src="assets/screenshots/v081/entrenamiento.png" alt="Hoy, con claridad. Pantalla de la app con datos de ejemplo." width="780" height="1688" loading="lazy" decoding="async"></a><figcaption><h3>Hoy, con claridad</h3><p>Tus sesiones del día, sus indicaciones y la etiqueta Opcional cuando corresponde.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/v081/calendario.png" target="_blank" rel="noopener" aria-label="Ampliar: Tu semana completa (abre otra pestaña)"><img src="assets/screenshots/v081/calendario.png" alt="Tu semana completa. Pantalla de la app con datos de ejemplo." width="780" height="1688" loading="lazy" decoding="async"></a><figcaption><h3>Tu semana completa</h3><p>Más espacio para los días y estados que distinguen lo planificado de lo realizado.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/v081/registrar.png" target="_blank" rel="noopener" aria-label="Ampliar: Registrá lo que hiciste (abre otra pestaña)"><img src="assets/screenshots/v081/registrar.png" alt="Registrá lo que hiciste. Pantalla de la app con datos de ejemplo." width="780" height="1688" loading="lazy" decoding="async"></a><figcaption><h3>Registrá lo que hiciste</h3><p>Opciones más simples y un nombre que se completa con el tipo y la distancia.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/v081/entrenadores.png" target="_blank" rel="noopener" aria-label="Ampliar: Tus alumnos primero (abre otra pestaña)"><img src="assets/screenshots/v081/entrenadores.png" alt="Tus alumnos primero. Pantalla de la app con datos de ejemplo." width="780" height="1688" loading="lazy" decoding="async"></a><figcaption><h3>Tus alumnos primero</h3><p>Buscá un alumno y abrí su semana o su chat desde una lista compacta.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/v081/comunidad.png" target="_blank" rel="noopener" aria-label="Ampliar: Compartí el camino (abre otra pestaña)"><img src="assets/screenshots/v081/comunidad.png" alt="Compartí el camino. Pantalla de la app con datos de ejemplo." width="780" height="1688" loading="lazy" decoding="async"></a><figcaption><h3>Compartí el camino</h3><p>Actividades, carreras y conversaciones entre corredores conectados.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/v081/competir.png" target="_blank" rel="noopener" aria-label="Ampliar: Tu próxima meta (abre otra pestaña)"><img src="assets/screenshots/v081/competir.png" alt="Tu próxima meta. Pantalla de la app con datos de ejemplo." width="780" height="1688" loading="lazy" decoding="async"></a><figcaption><h3>Tu próxima meta</h3><p>Explorá carreras, elegí tu distancia y organizá tus próximas competencias.</p></figcaption></figure><figure class="screen-card"><a href="assets/screenshots/v081/inicio-oscuro.png" target="_blank" rel="noopener" aria-label="Ampliar: También en modo oscuro (abre otra pestaña)"><img src="assets/screenshots/v081/inicio-oscuro.png" alt="También en modo oscuro. Pantalla de la app con datos de ejemplo." width="780" height="1688" loading="lazy" decoding="async"></a><figcaption><h3>También en modo oscuro</h3><p>La misma experiencia en una presentación que se adapta a vos.</p></figcaption></figure></div></section>
+  <section id="entrenamiento" class="release-section" aria-labelledby="release-title">
+    <div class="section-heading">
+      <h2 id="release-title">Tu entrenamiento, día a día</h2>
+    </div>
+    <div class="release-grid">
+      <article class="release-card">
+        <h3>Tu semana en Inicio</h3>
+        <p>Consultá el resumen semanal, tu próximo entrenamiento, tu carrera y tus objetivos desde el carrusel de Inicio.</p>
+        <a href="#pantallas">Explorá las pantallas →</a>
+      </article>
+      <article class="release-card">
+        <h3>Planificación para corredores</h3>
+        <p>Prepará tu semana, consultá las sesiones de tu entrenador y registrá lo que hiciste.</p>
+      </article>
+      <article class="release-card">
+        <h3>Seguimiento para entrenadores</h3>
+        <p>Abrí la semana de cada alumno desde su ficha y dejale una devolución privada sobre su entrenamiento.</p>
+      </article>
+      <article class="release-card">
+        <h3>Compartí tu actividad</h3>
+        <p>Prepará una imagen con tus resultados y elegí qué métricas querés compartir.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="pantallas" class="screens-section" aria-labelledby="screens-title">
+    <div class="section-heading">
+      <h2 id="screens-title">Conocé RunCircuit por dentro</h2>
+      <p class="section-description">Pantallas de la app en vista móvil, con datos de ejemplo.</p>
+      <p class="screen-hint">Deslizá para explorar o elegí una pantalla para ampliarla.</p>
+    </div>
+    <div class="screens-track" tabindex="0" role="region" aria-label="Galería de pantallas de RunCircuit">
+      <figure class="screen-card">
+        <a href="assets/screenshots/v087/inicio.png" target="_blank" rel="noopener" aria-label="Ampliar pantalla: Inicio (abre otra pestaña)">
+          <img src="assets/screenshots/v087/inicio.png" alt="Resumen semanal de distancia y actividades en RunCircuit." width="780" height="1688" loading="lazy" decoding="async">
+        </a>
+        <figcaption>
+          <h3>Inicio</h3>
+          <p>Consultá tu semana y las novedades de tus conexiones.</p>
+        </figcaption>
+      </figure>
+      <figure class="screen-card">
+        <a href="assets/screenshots/v087/garmin.png" target="_blank" rel="noopener" aria-label="Ampliar pantalla: Actividad importada (abre otra pestaña)">
+          <img src="assets/screenshots/v087/garmin.png" alt="Detalle de un rodaje importado desde Garmin con distancia, tiempo, ritmo y frecuencia cardíaca." width="780" height="1688" loading="lazy" decoding="async">
+        </a>
+        <figcaption>
+          <h3>Actividad importada</h3>
+          <p>Revisá las métricas que llegaron desde Garmin Connect.</p>
+        </figcaption>
+      </figure>
+      <figure class="screen-card">
+        <a href="assets/screenshots/v087/planificar.png" target="_blank" rel="noopener" aria-label="Ampliar pantalla: Planificá tu semana (abre otra pestaña)">
+          <img src="assets/screenshots/v087/planificar.png" alt="Planificación semanal con sesiones de rodaje y gimnasio." width="780" height="1688" loading="lazy" decoding="async">
+        </a>
+        <figcaption>
+          <h3>Planificá tu semana</h3>
+          <p>Organizá tus sesiones y marcá lo que ya hiciste.</p>
+        </figcaption>
+      </figure>
+      <figure class="screen-card">
+        <a href="assets/screenshots/v087/alumnos.png" target="_blank" rel="noopener" aria-label="Ampliar pantalla: Mis alumnos (abre otra pestaña)">
+          <img src="assets/screenshots/v087/alumnos.png" alt="Listado de alumnos con accesos a su semana y a mensajes." width="780" height="1688" loading="lazy" decoding="async">
+        </a>
+        <figcaption>
+          <h3>Mis alumnos</h3>
+          <p>Abrí la semana de cada alumno desde su ficha.</p>
+        </figcaption>
+      </figure>
+      <figure class="screen-card">
+        <a href="assets/screenshots/v087/comunidad.png" target="_blank" rel="noopener" aria-label="Ampliar pantalla: Comunidad (abre otra pestaña)">
+          <img src="assets/screenshots/v087/comunidad.png" alt="Actividades de la comunidad y accesos a conexiones, solicitudes y avisos." width="780" height="1688" loading="lazy" decoding="async">
+        </a>
+        <figcaption>
+          <h3>Comunidad</h3>
+          <p>Seguí las actividades y carreras de tus conexiones.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
   <!-- CALENDARIO + RANKING -->
 
   <section id="competir" class="showcase">
@@ -539,7 +611,7 @@
     <div>
 
       <span class="download-label">
-        WEB + BETA PARA ANDROID · v0.8.5
+        WEB + BETA PARA ANDROID · v0.8.7
       </span>
 
       <h2>
@@ -547,7 +619,7 @@
       </h2>
 
       <p>
-        Usá RunCircuit desde el navegador o instalá la versión 0.8.5 para Android. Elegí cómo acompañar tus entrenamientos.
+        Usá RunCircuit desde el navegador o instalá la versión 0.8.7 para Android. Elegí cómo acompañar tus entrenamientos.
       </p>
 
     </div>
@@ -557,10 +629,10 @@
 
 
 
-      <a class="download-button" href="https://drive.google.com/file/d/1-7dC5l1y8FrRg87G6rf_NR6SXqJT8PsP/view?usp=sharing" target="_blank" rel="noopener noreferrer">Descargar v0.8.5</a>
+      <a class="download-button" href="https://expo.dev/artifacts/eas/3JUqfdRsCeSf76P7Ku_kBbtIa3AtGEhMIz-LbaMvTvY.apk" target="_blank" rel="noopener noreferrer">Descargar v0.8.7</a>
 
       <small>
-        RunCircuit Beta v0.8.5 · APK para Android
+        RunCircuit Beta v0.8.7 · APK para Android
       </small>
 
     </div>
@@ -597,7 +669,7 @@
       </p>
 
       <span class="footer-beta">
-        Beta Android · v0.8.5
+        Beta Android · v0.8.7
       </span>
 
     </div>
@@ -609,6 +681,7 @@
       <a href="https://app.runcircuit.com.ar">Usar app web</a>
 
       <a href="#inicio">Inicio</a>
+      <a href="#garmin">Garmin Connect</a>
       <a href="#entrenamiento">Entrenamiento</a>
       <a href="#competir">Competir</a>
       
