@@ -3139,3 +3139,8 @@ a {
   .landing-v5 .release-card { padding: 24px; }
   .landing-v5 .hero-details-link { padding: 10px 0; text-align: center; }
 }
+
+/* Equal-height gallery frames preserve both app screens and share cards. */
+.screens-track { align-items: flex-start; }
+.screen-card > a { aspect-ratio: 640 / 1387; display: flex; align-items: center; }
+.screen-card img { height: 100%; aspect-ratio: auto; object-fit: contain; }
