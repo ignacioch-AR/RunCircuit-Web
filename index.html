@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>RunCircuit | Entrenamiento y sincronización con Garmin Connect</title>
+  <title>RunCircuit | Entrená, competí y compartí tu progreso</title>
 
   <meta
     name="description"
-    content="Sincronizá tus actividades de Garmin Connect, organizá tu semana y seguí tus entrenamientos con RunCircuit en Android y desde el navegador."
+    content="Tus últimos 7 días, actividades de running y ciclismo, sincronización con Garmin Connect, planificación, carreras y comunidad. Usá RunCircuit en Android o desde la web."
   >
 
-  <link rel="icon" type="image/png" href="assets/runcircuit-rc-favicon.png"><meta name="theme-color" content="#2460ed"><link rel="stylesheet" href="styles.css?v=088">
+  <link rel="icon" type="image/png" href="assets/runcircuit-rc-favicon.png"><meta name="theme-color" content="#2460ed"><link rel="stylesheet" href="styles.css?v=20261120">
 </head>
 
 <body class="landing-v5">
@@ -24,7 +24,7 @@
         <span class="rc-wordmark">Run<span>Circuit</span></span>
     </a>
 
-    <nav class="nav" aria-label="Navegación principal"><a href="#garmin">Garmin</a><a href="#entrenamiento">Entrenamiento</a><a href="#competir">Competir</a><a href="#comunidad">Comunidad</a><a href="#acerca">Acerca de</a><a href="#contacto">Contacto</a></nav>
+    <nav class="nav" aria-label="Navegación principal"><a href="#entrenamiento">Novedades</a><a href="#pantallas">Pantallas</a><a href="#garmin">Garmin</a><a href="#competir">Competir</a><a href="#comunidad">Comunidad</a><a href="#contacto">Contacto</a></nav>
 
     <a class="button button-small" href="https://app.runcircuit.com.ar">Usar app web</a>
 
@@ -43,17 +43,16 @@
       <div class="hero-text">
 
         <div class="beta-pill">
-          <span>●</span>
-          SINCRONIZACIÓN CON GARMIN CONNECT
+          RUNNING · CICLISMO · COMUNIDAD
         </div>
 
         <h1>
-          Entrená con tu Garmin.<br>
+          Cada entrenamiento cuenta.<br>
           <span>Seguí tu progreso en RunCircuit.</span>
         </h1>
 
         <p>
-          Conectá tu cuenta de Garmin Connect e importá automáticamente tus actividades nuevas. Revisá lo que hiciste junto a tu plan semanal y compartilo con tus conexiones.
+          Mirá tus últimos 7 días, organizá tus entrenamientos y prepará tu próxima carrera. Sincronizá tus actividades con Garmin Connect y compartí tu progreso con la comunidad.
         </p>
 
         <div class="hero-actions">
@@ -68,7 +67,7 @@
           Descargar v0.8.9
         </a>
 
-          <a class="button button-secondary" href="#garmin">Cómo conectar Garmin</a>
+          <a class="hero-details-link" href="#pantallas">Conocé la app por dentro</a>
 
         </div>
         <p class="web-access-note">Entrá con tu cuenta desde el navegador, sin instalar nada.</p>
@@ -78,7 +77,7 @@
       <div class="app-preview">
         <div class="preview-orbit" aria-hidden="true"></div>
         <a href="assets/screenshots/v088/inicio.png" target="_blank" rel="noopener" aria-label="Ver pantalla de inicio en tamaño completo (abre otra pestaña)">
-          <img src="assets/screenshots/v088/inicio.png" width="780" height="1688" fetchpriority="high" alt="Inicio de RunCircuit con el resumen semanal y las actividades de la comunidad.">
+          <img src="assets/screenshots/v088/inicio.png" width="780" height="1688" fetchpriority="high" alt="Vista de referencia de Inicio de RunCircuit, con resumen de actividad y comunidad.">
         </a>
         <span class="preview-caption">Pantalla de la app con datos de ejemplo</span>
       </div>
@@ -88,6 +87,7 @@
     <div>
       <h2 id="garmin-title">Cómo conectar Garmin Connect</h2>
       <p>Las actividades nuevas aparecen en tu historial de RunCircuit cuando se sincronizan con Garmin Connect. Podés consultar la distancia, el tiempo, el ritmo o la velocidad y la frecuencia cardíaca cuando Garmin envía esos datos.</p>
+      <p>La importación también recupera los parciales y las vueltas cuando están disponibles en el archivo de Garmin. Así podés revisar cada tramo de tu entrenamiento.</p>
       <ol class="garmin-steps">
         <li>En RunCircuit, entrá a <strong>Mi perfil → Garmin Connect</strong>.</li>
         <li>Tocá <strong>Conectar Garmin Connect</strong> y autorizá el acceso a tus actividades.</li>
@@ -162,17 +162,27 @@
 
   <section id="entrenamiento" class="release-section" aria-labelledby="release-title">
     <div class="section-heading">
-      <h2 id="release-title">Tu entrenamiento, día a día</h2>
+      <span class="section-kicker">LO NUEVO EN RUNCIRCUIT</span>
+      <h2 id="release-title">Más claridad para seguir tu progreso</h2>
+      <p class="section-description">Tu actividad reciente, el detalle de cada entrenamiento y tu planificación, en un mismo lugar.</p>
     </div>
     <div class="release-grid">
       <article class="release-card">
-        <h3>Tu semana en Inicio</h3>
-        <p>Consultá el resumen semanal, tu próximo entrenamiento, tu carrera y tus objetivos desde el carrusel de Inicio.</p>
-        <a href="#pantallas">Explorá las pantallas →</a>
+        <h3>Tus últimos 7 días</h3>
+        <p>Consultá los kilómetros de hoy y los seis días anteriores. El resumen de actividad se mueve con vos: no vuelve a cero cada lunes.</p>
+        <a href="#pantallas">Explorá las pantallas</a>
+      </article>
+      <article class="release-card">
+        <h3>Garmin, tramo por tramo</h3>
+        <p>Revisá los parciales por kilómetro y las vueltas disponibles de tus actividades importadas. El detalle depende de los datos registrados por Garmin.</p>
+      </article>
+      <article class="release-card">
+        <h3>Running y ciclismo</h3>
+        <p>Seguí tus salidas a pie y en bici. Consultá el ritmo en running, la velocidad media en ciclismo y la frecuencia cardíaca cuando esté disponible.</p>
       </article>
       <article class="release-card">
         <h3>Planificación para corredores</h3>
-        <p>Prepará tu semana, consultá las sesiones de tu entrenador y registrá lo que hiciste.</p>
+        <p>Organizá rodajes, pasadas, bloques y fondos. Tu plan conserva sus fechas semanales para que puedas comparar lo programado con lo realizado.</p>
       </article>
       <article class="release-card">
         <h3>Seguimiento para entrenadores</h3>
@@ -180,7 +190,7 @@
       </article>
       <article class="release-card">
         <h3>Compartí tu actividad</h3>
-        <p>Prepará una imagen con tus resultados y elegí qué métricas querés compartir.</p>
+        <p>Elegí las métricas y el estilo de tu tarjeta de actividad para compartir tus resultados. En la comunidad podés participar con Me gusta, comentarios y respuestas.</p>
       </article>
     </div>
   </section>
@@ -188,7 +198,7 @@
   <section id="pantallas" class="screens-section" aria-labelledby="screens-title">
     <div class="section-heading">
       <h2 id="screens-title">Conocé RunCircuit por dentro</h2>
-      <p class="section-description">Pantallas de la app en vista móvil, con datos de ejemplo.</p>
+      <p class="section-description">Vistas de referencia de la app en formato móvil, con datos de ejemplo.</p>
       <p class="screen-hint">Deslizá para explorar o elegí una pantalla para ampliarla.</p>
     </div>
     <div class="screens-track" tabindex="0" role="region" aria-label="Galería de pantallas de RunCircuit">
@@ -198,7 +208,7 @@
         </a>
         <figcaption>
           <h3>Inicio</h3>
-          <p>Consultá tu semana y las novedades de tus conexiones.</p>
+          <p>Tu resumen de actividad, objetivos y novedades de la comunidad.</p>
         </figcaption>
       </figure>
       <figure class="screen-card">
@@ -361,9 +371,8 @@
           <span>✓</span>
 
           <p>
-            Próximamente este calendario se actualizará
-            automáticamente con las carreras publicadas
-            por la comunidad RunCircuit.
+            Consultá el calendario actualizado dentro de la app,
+            con las carreras publicadas por la comunidad.
           </p>
         </div>
 
@@ -616,7 +625,7 @@
       </h2>
 
       <p>
-        La versión 0.8.9 para Android muestra tus últimos 7 días en Inicio, ordena las actividades por fecha y mejora la visualización de las vueltas de Garmin Connect.
+        Entrá desde el navegador o descargá la Beta para Android. Encontrá tu actividad de los últimos 7 días, entrenamientos ordenados por fecha y el detalle de Garmin Connect en un mismo lugar.
       </p>
 
     </div>

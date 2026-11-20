@@ -3097,3 +3097,45 @@ a {
     font-size: 18px;
   }
 }
+
+/* November update: readable type, compact feature grid and orange accents. */
+.landing-v5 .hero-details-link {
+  align-self: center;
+  color: var(--blue-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.landing-v5 .release-section .section-kicker { color: #a54710; }
+.landing-v5 .release-card { border-radius: 20px; padding: 28px; }
+.landing-v5 .release-card h3 { font-size: 1.5rem; }
+.landing-v5 .release-card:first-child { border-top: 4px solid #ff944d; }
+.landing-v5 .release-card:first-child h3 { color: #fff; }
+.landing-v5 .release-card p { margin-bottom: 0; }
+.landing-v5 .release-grid { align-items: stretch; }
+.landing-v5 .feature p,
+.landing-v5 .community-item p,
+.landing-v5 .runner-tool p,
+.landing-v5 .section-description,
+.landing-v5 .showcase-card > p,
+.landing-v5 .benefits li,
+.landing-v5 .about p,
+.landing-v5 .download p { font-size: 1rem; line-height: 1.65; }
+.landing-v5 .screen-card p { font-size: 1rem; }
+.landing-v5 .preview-caption { font-size: .875rem; letter-spacing: .02em; text-align: center; }
+.landing-v5 .screen-hint,
+.landing-v5 .garmin-preview figcaption,
+.landing-v5 .web-race-info small,
+.landing-v5 .web-race-info > span,
+.landing-v5 .calendar-note p,
+.landing-v5 .coming-soon-note { font-size: .875rem; }
+.landing-v5 .footer-logo .rc-wordmark { color: #101c34; }
+.landing-v5 .footer-logo .rc-wordmark > span { color: #2460ed; }
+@media (min-width: 1050px) {
+  .landing-v5 .release-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .landing-v5 .release-card { padding: 24px; }
+  .landing-v5 .hero-details-link { padding: 10px 0; text-align: center; }
+}
