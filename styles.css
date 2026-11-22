@@ -3220,3 +3220,14 @@ a {
 .landing-v5 :is(a, button, [tabindex]):focus-visible {
   outline-color: var(--accent-dark);
 }
+.landing-v5 .web-access-link {
+  align-self: center;
+  padding: 10px 0;
+  color: var(--muted);
+  font-size: .875rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.landing-v5 .web-access-link:hover { color: var(--blue-dark); }
