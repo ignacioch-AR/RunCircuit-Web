@@ -3144,3 +3144,79 @@ a {
 .screens-track { align-items: flex-start; }
 .screen-card > a { aspect-ratio: 640 / 1387; display: flex; align-items: center; }
 .screen-card img { height: 100%; aspect-ratio: auto; object-fit: contain; }
+
+/* Blue remains the brand base; orange connects the landing with the app and Instagram. */
+.landing-v5 {
+  --accent: #ff942e;
+  --accent-dark: #a54710;
+  --accent-soft: #fff1e4;
+  --accent-border: #f2c49b;
+}
+.landing-v5 .hero {
+  background: radial-gradient(ellipse at 88% 22%, #ffe6cc, transparent 42%),
+    radial-gradient(ellipse at 75% 78%, #dbe8ff, transparent 48%), #f8faff;
+}
+.landing-v5 .beta-pill {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border-color: var(--accent-border);
+  font-size: .875rem;
+}
+.landing-v5 .button:not(.button-secondary),
+.landing-v5 .download-button {
+  background: var(--accent);
+  color: #101c34;
+  box-shadow: 0 8px 20px #a5471017;
+}
+.landing-v5 .button:not(.button-secondary):hover,
+.landing-v5 .download-button:hover {
+  background: #ffad5c;
+  color: #101c34;
+  box-shadow: 0 10px 24px #a5471026;
+}
+.landing-v5 .button-secondary {
+  border-color: var(--accent-border);
+  color: var(--accent-dark);
+}
+.landing-v5 .button-secondary:hover {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+.landing-v5 .nav a:hover,
+.landing-v5 .hero-details-link { color: var(--accent-dark); }
+.landing-v5 .preview-orbit { border: 2px solid var(--accent); }
+.landing-v5 .feature-icon:is(.green, .orange) {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+}
+.landing-v5 .section-kicker { color: var(--accent-dark); font-size: .875rem; }
+.landing-v5 .heading-line { background: var(--accent); }
+.landing-v5 .release-card { border-top: 4px solid var(--accent-border); }
+.landing-v5 .release-card:first-child { border-top-color: var(--accent); }
+.landing-v5 .release-card:first-child a { color: #ffb66f; }
+.landing-v5 .garmin-section { border-inline-start: 4px solid var(--accent); }
+.landing-v5 .web-race-date {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+.landing-v5 .web-race-date span { color: var(--accent-dark); font-size: .875rem; }
+.landing-v5 .calendar-note { background: var(--accent-soft); }
+.landing-v5 .calendar-note span,
+.landing-v5 .calendar-note p { color: var(--accent-dark); }
+.landing-v5 .ranking-row.highlight {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+}
+.landing-v5 .benefits li::before { color: var(--accent-dark); }
+.landing-v5 .community h2 span,
+.landing-v5 .community-label { color: #ffb66f; }
+.landing-v5 .beta-download {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  box-shadow: none;
+}
+.landing-v5 .download-label { color: var(--accent-dark); font-size: .875rem; }
+.landing-v5 .screen-card > a:hover { border-color: var(--accent); }
+.landing-v5 :is(a, button, [tabindex]):focus-visible {
+  outline-color: var(--accent-dark);
+}
