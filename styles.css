@@ -3231,3 +3231,11 @@ a {
   text-underline-offset: 4px;
 }
 .landing-v5 .web-access-link:hover { color: var(--blue-dark); }
+
+/* Android 0.8.10: installation hint stays secondary to the download action. */
+.download-update-note { max-width: 34rem; margin: .75rem auto 0; font-size: .875rem; line-height: 1.6; color: var(--muted); text-align: center; }
+.download-actions { min-width: 0; max-width: 100%; }
+@media (max-width: 1000px) {
+  .download { flex-direction: column; text-align: center; }
+  .download-actions { width: 100%; }
+}
